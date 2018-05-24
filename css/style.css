@@ -1,0 +1,176 @@
+body {
+  background-color: white;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+/*  background-image: url('../img/bg-01.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover, a:visited {
+  /*text-decoration: underline;*/
+  border-bottom: 1px solid #6af;
+}
+
+.header {
+  position: fixed;
+  margin: 0;
+  padding: 1%;
+  width: 100%;
+  background-color: #234;
+  /*background-color: #6af;*/
+  z-index: 0;
+}
+
+/*.nav {
+  position: -webkit-sticky;
+  bottom: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 1%;
+  background-color: rgba(60,180,255,.7);
+  z-index: 1;
+}*/
+
+.nav {
+  background-color: #6af;
+  /*background-color: #333;*/
+  position: fixed;
+  top: 19%;
+  width: 100%;
+  display:block;
+  transition: top 0.3s;
+}
+
+.nav ul {
+}
+
+.nav li {
+  display: inline-block;
+  animation: squeeze .5s ease-out reverse;
+}
+
+.nav li:hover {
+  animation: spread .5s ease-out forwards;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+  border-top: 0;
+}
+
+.hero {
+  margin: 0;
+  padding: 1%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200,200,200,.6);
+}
+
+.mids {
+  /*background-color: rgba(100,100,100,.4);*/
+  margin: 10% auto;
+  width: 75%;
+  max-width: 85%;
+  height: auto;
+}
+
+.mids img {
+  max-width: 80%;
+  height: auto;
+}
+
+#about {
+  margin: 1% auto;
+  padding: 2%;
+  background-color: rgba(50,50,50,.9);
+  border-radius: 5px;
+  /*max-width: 650px;*/
+}
+
+#projects {
+  background-color: rgba(50,50,50,.9);
+  border-radius: 5px;
+  padding: 5%;
+  /*max-width: 80%;*/
+}
+
+#contact {
+  background-color: rgba(50,50,50,.9);
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.web-projects {
+
+}
+
+.web-projects .web-project {
+  background-color: rgba(50,50,50,.9);
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.web-project a > img {
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+}
+
+span {
+  color: #6af;
+}
+
+.footer {
+  margin: 0;
+  padding: 1%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(50,50,50,1);
+  z-index: 0;
+}
+
+.footer ul {
+
+}
+
+.footer li {
+  display: inline-block;
+  animation: squeeze .5s ease-out reverse;
+}
+
+.footer li:hover {
+  animation: spread .5s ease-out forwards;
+}
+
+@keyframes spread {
+  0%   {padding: 0 5%;}
+  100% {padding: 0 10%;}
+}
+
+@keyframes squeeze {
+  100% {padding: 0 10%;}
+  0%   {padding: 0 5%;}
+}
+
+@keyframes info {
+  from {visibility: hidden;}
+  to {visibility: visible;}
+}
