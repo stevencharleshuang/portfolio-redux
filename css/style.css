@@ -25,7 +25,7 @@ a:hover, a:visited {
 .header {
   position: fixed;
   margin: 0;
-  padding: 1%;
+  padding: .5%;
   width: 100%;
   background-color: #234;
   /*background-color: #6af;*/
@@ -47,10 +47,15 @@ a:hover, a:visited {
   background-color: #6af;
   /*background-color: #333;*/
   position: fixed;
-  top: 19%;
+  top: 18%;
   width: 100%;
   display:block;
   transition: top 0.3s;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
 }
 
 .nav ul {
@@ -75,16 +80,21 @@ a:hover, a:visited {
 }
 
 .hero {
-  margin: 0;
+  position: absolute;
+  /*margin: 0 auto;*/
+  /*text-align: center;*/
+  top: 20%;
   padding: 1%;
   width: 100%;
   height: 100%;
-  background-color: rgba(200,200,200,.6);
+  /*background-color: rgba(200,200,200,.6);*/
+  z-index: -1;
 }
 
 .mids {
+  position: relative;
   /*background-color: rgba(100,100,100,.4);*/
-  margin: 10% auto;
+  margin: 5% auto;
   width: 75%;
   max-width: 85%;
   height: auto;
@@ -112,6 +122,7 @@ a:hover, a:visited {
 
 #contact {
   background-color: rgba(50,50,50,.9);
+  font-family: Garamond, Times New Roman, serif;
   border-radius: 5px;
   padding: 2%;
 }
@@ -124,6 +135,11 @@ a:hover, a:visited {
   background-color: rgba(50,50,50,.9);
   border-radius: 5px;
   padding: 2%;
+  margin: 5% 0;
+}
+
+.web-projects .web-project .web-project-info {
+  font-family: Garamond, Times New Roman, serif;
 }
 
 .web-project a > img {
@@ -134,30 +150,40 @@ a:hover, a:visited {
 
 span {
   color: #6af;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .footer {
-  margin: 0;
-  padding: 1%;
+  margin: 0 auto;
+  padding: .5%;
   position: fixed;
   bottom: 0;
   width: 100%;
   height: auto;
+  max-height: 50px;
   background-color: rgba(50,50,50,1);
   z-index: 0;
 }
 
 .footer ul {
+  text-align: center;
 
 }
 
 .footer li {
+  text-decoration: none;
   display: inline-block;
   animation: squeeze .5s ease-out reverse;
 }
 
 .footer li:hover {
   animation: spread .5s ease-out forwards;
+}
+
+.footer img {
+  width: 25px;
+  height: auto;
+
 }
 
 @keyframes spread {
