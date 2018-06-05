@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #222;
   color: white;
   font-family: Helvetica, Arial, sans-serif;
   text-align: center;
@@ -7,7 +7,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;*/
   margin: 0;
-  padding: 0;
+  padding-top: 150px;
+  /*padding: 0;*/
   height: 100%;
   width: 100%;
 }
@@ -22,14 +23,35 @@ a:hover, a:visited {
   border-bottom: 1px solid #6af;
 }
 
-.header {
+header {
+  padding: 5px;
+  font-family: 'Tauri', sans-serif;
+  /*letter-spacing: 1.5px;*/
   position: fixed;
   margin: 0;
-  padding: .5%;
   width: 100%;
-  background-color: #234;
-  /*background-color: #6af;*/
-  z-index: 0;
+  height: 50px;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  background-color: #25a;
+  z-index: 2;
+}
+
+header #name {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  text-align: left;
+  color: white;
+}
+
+header #title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  text-align: right;
+}
+
+.nav-up {
+  top: -150px;
 }
 
 /*.nav {
@@ -79,11 +101,11 @@ a:hover, a:visited {
   border-top: 0;
 }
 
-.hero {
+main {
   position: absolute;
   /*margin: 0 auto;*/
   /*text-align: center;*/
-  top: 20%;
+  top: 10%;
   padding: 1%;
   width: 100%;
   height: 100%;
@@ -95,28 +117,30 @@ a:hover, a:visited {
   position: relative;
   /*background-color: rgba(100,100,100,.4);*/
   margin: 5% auto;
-  width: 75%;
+  width: 85%;
   max-width: 85%;
   height: auto;
 }
 
 .mids img {
-  max-width: 80%;
+  width: 100%;
   height: auto;
 }
 
 #about {
-  margin: 1% auto;
+  margin: 10% auto;
   padding: 2%;
   background-color: rgba(50,50,50,.9);
   border-radius: 5px;
   /*max-width: 650px;*/
+  font-family: Garamond, Times New Roman, serif;
 }
 
 #projects {
   background-color: rgba(50,50,50,.9);
   border-radius: 5px;
-  padding: 5%;
+  padding: 1%;
+  height: 100%;
   /*max-width: 80%;*/
 }
 
@@ -125,20 +149,39 @@ a:hover, a:visited {
   font-family: Garamond, Times New Roman, serif;
   border-radius: 5px;
   padding: 2%;
+  margin: 10% auto;
 }
 
 .web-projects {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  padding: 2% 1%;
+  height: 100%;
+}
 
+.l-col {
+  flex-basis: 100%;
+    width: 50%;
+  padding: 2%;
+}
+.r-col {
+  flex-basis: 100%;
+    width: 50%;
+  padding: 2%;
 }
 
 .web-projects .web-project {
   background-color: rgba(50,50,50,.9);
   border-radius: 5px;
-  padding: 2%;
-  margin: 5% 0;
+  height: 40%;
+  overflow: scroll;
+  padding: 5% 2%;
+  margin: 7% 1%;
 }
 
 .web-projects .web-project .web-project-info {
+  padding: 5%;
   font-family: Garamond, Times New Roman, serif;
 }
 
@@ -148,12 +191,26 @@ a:hover, a:visited {
   border-radius: 5px;
 }
 
+.git-icon {
+  width: 20px;
+  height: auto;
+  visibility: hidden;
+}
+
+.show-git {
+  visibility: visible;
+}
+
+.hide-git {
+  visibility: hidden;
+}
+
 span {
   color: #6af;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.footer {
+footer {
   margin: 0 auto;
   padding: .5%;
   position: fixed;
@@ -165,22 +222,28 @@ span {
   z-index: 0;
 }
 
-.footer ul {
+.footer-banner {
+  margin: 1% 0 0 1%;
+  position: absolute;
+  left: 0;
+}
+
+footer ul {
   text-align: center;
 
 }
 
-.footer li {
+footer li {
   text-decoration: none;
   display: inline-block;
   animation: squeeze .5s ease-out reverse;
 }
 
-.footer li:hover {
+footer li:hover {
   animation: spread .5s ease-out forwards;
 }
 
-.footer img {
+footer img {
   width: 25px;
   height: auto;
 

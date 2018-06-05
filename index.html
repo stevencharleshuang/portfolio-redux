@@ -3,25 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Steven Charles Huang - NERD Stack Web Developer</title>
+  <link href="https://fonts.googleapis.com/css?family=Tauri" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
-  <div class="header">
-    <h1>Steven Charles Huang</h1>
-    <h2>NERD Stack Web Developer</h2>
-  </div>
-  <div class="nav">
+  <header>
+    <span id="name">Steven Charles Huang</span><br>
+    <span id="title">NERD Stack Web Developer</span>
+  </header>
+  <!-- <div class="nav">
     <ul>
       <li><div class="nav-link about-link"><a href="#about">About</a></div></li>
       <li><div class="nav-link projects-link"><a href="#projects">Projects</a></div></li>
       <li><div class="nav-link contact-link"><a href="#contact">Contact</a></div></li>
     </ul>
-  </div>
-  <div class="hero">
+  </div> -->
+  <main>
+    <div class="lefts"></div>
     <div class="mids">
-      <div class="splash">
+      <div class="splash" id="splash">
         <img src="./img/splash-01.jpg">
       </div>
       <div class="mids" id="about">
@@ -35,65 +38,70 @@
       <div class="mids" id="projects">
         <h3><span>Projects</span></h3>
         <div class="web-projects">
-          <div class="web-project" id="stevefighter">
-            <h3>Steve Fighter II</h3>
-            <a href="http://eager-blackwell-7636a3.bitballoon.com/">
-              <img src="./img/steve-fighter.png" alt="steve-fighter">
-            </a>
-            <div class="web-project-info">
-              <p>
-                This is a game based on the popular 90s game by capcom.
-                It features a player signup form and hit-detection without HTML5 Canvas
-                <br /><br />
-                <span>Tech</span>: HTML, CSS, JavaScript, jQuery
-              </p>
-            </div>
-          </div>
-          <div class="web-project" id="ivebin">
-            <div class="ivebin-img">
-              <h3>IveBin</h3>
-              <a href="https://ivebin.herokuapp.com/public">
-                <img src="./img/ivebin.png" alt="ivebin">
-              </a>
-            </div>
-            <div class="web-project-info">
-              <p>
-                This is a full-CRUD app for users to create a profile, log in, then
-                blog about their travel experiences with the ability to
-                upload a related image.
-                <br /><br />
-                <span>Tech</span>: HTML, CSS, JavaScript, Node, Express, PostgreSQL
-              </p>
-            </div>
-          </div>
-          <div class="web-project" id="searchwoo">
-            <h3>SearchWoo</h3>
-            <a href="https://searchwoo.herokuapp.com">
-              <img src="./img/searchwoo.png" alt="searchwoo">
-            </a>
-            <div class="web-project-info">
-              <p>
-                This is a group-made CRUD app based on the functionality of FourSquare and Yelp
-                where users can log in, choose a business they would like to review,
-                then add their own review to the business.
-                <br /><br />
-                <span>Tech</span>: HTML, CSS, JavaScript, Node, Express, React, PostgreSQL
-              </p>
-            </div>
-          </div>
-          <div class="web-project" id="tictactoe">
-              <h3>Tic-Tac-Toe</h3>
-              <a href="https://git.generalassemb.ly/pages/stevencharleshuang/jquery-tic-tac-toe-hw/">
-                <img src="./img/tictactoe.png" alt="tictactoe">
+          <div class="l-col">
+            <div class="web-project" id="stevefighter">
+              <h3>Steve Fighter II</h3>
+              <a href="http://eager-blackwell-7636a3.bitballoon.com/">
+                <img src="./img/steve-fighter.png" alt="steve-fighter">
               </a>
               <div class="web-project-info">
                 <p>
-                  This was an assignment that challenged us to implement winning game logic using
-                  jQuery and JavaScript to create a functional 2-player game.
+                  This is a game based on the popular 90s game by capcom.
+                  It features a player signup form and hit-detection without HTML5 Canvas
                   <br /><br />
-                  <span>Tech</span>: HTML, CSS, JavaScript, jQuery
+                  <span>Tech</span>: <a class="steve-fighter-git" href="https://git.generalassemb.ly/stevencharleshuang/project-1-game">HTML, CSS, JavaScript, jQuery</a>
+                  <img class="git-icon" src="./img/github.png">
                 </p>
               </div>
+            </div>
+            <div class="web-project" id="ivebin">
+              <div class="ivebin-img">
+                <h3>IveBin</h3>
+                <a href="https://ivebin.herokuapp.com/public">
+                  <img src="./img/ivebin.png" alt="ivebin">
+                </a>
+              </div>
+              <div class="web-project-info">
+                <p>
+                  This is a full-CRUD app for users to create a profile, log in, then
+                  blog about their travel experiences with the ability to
+                  upload a related image.
+                  <br /><br />
+                  <span>Tech</span>: <a class="ivebin-git" href="https://git.generalassemb.ly/stevencharleshuang/project-2-CRUD-app">HTML, CSS, JavaScript, Node, Express, PostgreSQL</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="r-col">
+            <div class="web-project" id="searchwoo">
+              <h3>SearchWoo</h3>
+              <a href="https://searchwoo.herokuapp.com">
+                <img src="./img/searchwoo.png" alt="searchwoo">
+              </a>
+              <div class="web-project-info">
+                <p>
+                  This is a group-made CRUD app based on the functionality of FourSquare and Yelp
+                  where users can log in, choose a business they would like to review,
+                  then add their own review to the business.
+                  <br /><br />
+                  <span>Tech</span>: <a class="searchwoo-git" href="https://git.generalassemb.ly/team-awesome/project-3/tree/dev">HTML, CSS, JavaScript, Node, Express, React, PostgreSQL</a>
+                </p>
+              </div>
+            </div>
+            <div class="web-project" id="tictactoe">
+                <h3>Tic-Tac-Toe</h3>
+                <a href="https://git.generalassemb.ly/pages/stevencharleshuang/jquery-tic-tac-toe-hw/">
+                  <img src="./img/tictactoe.png" alt="tictactoe">
+                </a>
+                <div class="web-project-info">
+                  <p>
+                    This was an assignment that challenged us to implement winning game logic using
+                    jQuery and JavaScript to create a functional 2-player game.
+                    <br /><br />
+                    <span>Tech</span>: <a class="tictactoe-git" href="https://git.generalassemb.ly/stevencharleshuang/jquery-tic-tac-toe-hw">HTML, CSS, JavaScript, jQuery</a>
+                  </p>
+                </div>
+            </div>
           </div>
         </div>
         <div class="music-projects">
@@ -107,13 +115,17 @@
         </p>
       </div>
     </div>
-  </div>
-  <div class="footer">
+    <div class="rights"></div>
+  </main>
+  <footer>
+    <div class="footer-banner">
+      <span>check it</span>
+    </div>
     <ul class="footer-ul">
       <li><a id="git-link" href="https://github.com/stevencharleshuang/"><img id="git-icon" src="./img/github.png" alt="git"></a></li>
       <li><a id="linkedin-link" href="https://www.linkedin.com/in/stevencharleshuang/"><img src="./img/linkedin.png" alt="linkedin"></a></li>
-      <li><a id="resume-link" href="./assets/20180524_ Resume.pdf"><img src="./img/resume.png" alt="resume"></a></li>
+      <li><a id="resume-link" href="./assets/20180524_Resume.pdf"><img src="./img/resume.png" alt="resume"></a></li>
     </ul>
-  </div>
+  </footer>
 </body>
 </html>
