@@ -1,11 +1,9 @@
 $(function() {
   console.log( "jQuery ready and happy!" );
 
-
   $('.show-git').on('mouseenter', () => {
     $('.git-icon').css('visibility', 'visible');
   })
-
   // Footer Icon Replacement
   $('#git-link').on('mouseenter', (e) => {
     $('.footer-banner').html('<span id="git-text">Git</span>');
