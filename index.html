@@ -12,52 +12,65 @@
   <script src="js/main.js"></script>
 </head>
 <body>
-  <header>
-    <span id="name">Steven Charles Huang</span><br>
-    <span id="title">NERD Stack Web Developer</span>
-  </header>
-  <main>
-    <div class="container">
-      <div class="columns is-gapless">
-        <div class="column">
-          <div class="splash">
-
-            <img src="./img/splash-02.png">
-        <!-- <nav class="column">
-          <ul>
-            <li><div class="nav-link about-link"><a href="#about">About</a></div></li>
-            <li><div class="nav-link projects-link"><a href="#projects">Projects</a></div></li>
-            <li><div class="nav-link contact-link"><a href="#contact">Contact</a></div></li>
-          </ul>
-        </nav> -->
-          </div>
+  <header class="level">
+    <div class="level-left has-text-centered">
+      <span id="name">Steven Charles Huang</span>
+      <span id="title">[ Web Developer ]</span>
+    </div>
+      <div class="level-right has-text-centered columns">
+        <div class="stuff-box level-left">
+          My <span id="stuff">Stuff</span>
         </div>
-        <div class="column">
-          <div class="mids">
-          <div class="" id="about">
-            <h3><span>About</span></h3>
-            <p>
-              <span class="indent">I</span> am a Web Developer with passions for
-              music, gaming and all things related to problem-solving.
-            </p>
-            <p>
-              <span class="indent">In</span> 2018, I completed the 12-week
-              intensive Web Development Immersive program at General Assembly,
-              New York where we completed four major projects, three of which
-              required full-stack development. It was during this time that I
-              realized my passion for game development and have been unconventionally
-              creating games using JavaScript with jQuery, Crafty.js and HTML 5 Canvas.
-            </p>
-            <p>
-              <span class="indent">I</span> graduated from the SUNY Purchase
-              Conservatory of Music in 2009 with a Bachelor of Music in Studio
-              Composition so when I'm not knee-deep in code, I enjoy composing,
-              producing and recording music.
-            </p>
-          </div>
-          <div class="" id="projects">
-            <h3><span>Projects</span></h3>
-            <div class="web-projects">
+        <ul class="level-right">
+          <li><a id="git-link" href="https://github.com/stevencharleshuang/"><img id="git-icon" src="./img/github.png" alt="git"></a></li>
+          <li><a id="linkedin-link" href="https://www.linkedin.com/in/stevencharleshuang/"><img src="./img/linkedin.png" alt="linkedin"></a></li>
+          <li><a id="resume-link" href="./assets/20180605_Resume.pdf"><img src="./img/resume.png" alt="resume"></a></li>
+        </ul>
+      </div>
+  </header>
+  <main class="columns">
+    <div class="nav-btns">
+      <ul>
+        <li id="landing-btn">Landing</li>
+        <li id="about-btn">About</li>
+        <li id="projects-btn">Projects</li>
+        <li id="contact-btn">Contact</li>
+      </ul>
+    </div>
+    <div class="">
+      <section class="landing">
+        <div class="content">
+          <h1>Welcome</h1>
+        </div>
+      </section>
+      <section class="about">
+        <div class="content">
+          <h1>About</h1>
+          <p>
+            I am a Web Developer with passions for
+            music, gaming and all things related to problem-solving.
+          </p>
+          <p>
+            In 2018, I completed the 12-week
+            intensive Web Development Immersive program at General Assembly,
+            New York where we completed four major projects, three of which
+            required full-stack development. It was during this time that I
+            realized my passion for game development and have been unconventionally
+            creating games using JavaScript with jQuery, Crafty.js and HTML 5 Canvas.
+          </p>
+          <p>
+            I graduated from the SUNY Purchase
+            Conservatory of Music in 2009 with a Bachelor of Music in Studio
+            Composition so when I'm not knee-deep in code, I enjoy composing,
+            producing and recording music.
+          </p>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="content">
+          <h1>Projects</h1>
+          <div class="web-projects columns">
+            <div class="column">
                 <div class="web-project" id="stevefighter">
                   <h3>Steve Fighter II</h3>
                   <a href="http://eager-blackwell-7636a3.bitballoon.com/">
@@ -97,68 +110,58 @@
                     </p>
                   </div>
                 </div>
-                <div class="web-project" id="searchwoo">
-                  <h3>SearchWoo</h3>
-                  <a href="https://searchwoo.herokuapp.com">
-                    <img src="./img/searchwoo.png" alt="searchwoo">
+            </div>
+            <div class="column">
+              <div class="web-project" id="searchwoo">
+                <h3>SearchWoo</h3>
+                <a href="https://searchwoo.herokuapp.com">
+                  <img src="./img/searchwoo.png" alt="searchwoo">
+                </a>
+                <div class="web-project-info">
+                  <p>
+                    This is a group-made CRUD app based on the functionality of FourSquare and Yelp
+                    where users can log in, choose a business they would like to review,
+                    then add their own review to the business.
+                    <br /><br />
+                    <span>Tech</span>: <a class="searchwoo-git" href="https://git.generalassemb.ly/team-awesome/project-3/tree/dev">HTML, CSS, JavaScript, Node, Express, React, PostgreSQL</a>
+                  </p>
+                  <p>
+                    <a href="https://searchwoo.herokuapp.com"><img class="icon" src="./img/web.png" alt="git"></a>
+                    <a href="https://git.generalassemb.ly/team-awesome/project-3/tree/dev"><img class="icon" src="./img/github.png" alt="git"></a>
+                  </p>
+                </div>
+              </div>
+              <div class="web-project" id="tictactoe">
+                  <h3>Tic-Tac-Toe</h3>
+                  <a href="https://git.generalassemb.ly/pages/stevencharleshuang/jquery-tic-tac-toe-hw/">
+                    <img src="./img/tictactoe.png" alt="tictactoe">
                   </a>
                   <div class="web-project-info">
                     <p>
-                      This is a group-made CRUD app based on the functionality of FourSquare and Yelp
-                      where users can log in, choose a business they would like to review,
-                      then add their own review to the business.
+                      This was an assignment that challenged us to implement winning game logic using
+                      jQuery and JavaScript to create a functional 2-player game.
                       <br /><br />
-                      <span>Tech</span>: <a class="searchwoo-git" href="https://git.generalassemb.ly/team-awesome/project-3/tree/dev">HTML, CSS, JavaScript, Node, Express, React, PostgreSQL</a>
+                      <span>Tech</span>: <a class="tictactoe-git" href="https://github.com/stevencharleshuang/jquery-tic-tac-toe">HTML, CSS, JavaScript, jQuery</a>
                     </p>
                     <p>
-                      <a href="https://searchwoo.herokuapp.com"><img class="icon" src="./img/web.png" alt="git"></a>
-                      <a href="https://git.generalassemb.ly/team-awesome/project-3/tree/dev"><img class="icon" src="./img/github.png" alt="git"></a>
+                      <a href="https://github.com/stevencharleshuang/jquery-tic-tac-toe"><img class="icon" src="./img/web.png" alt="git"></a>
+                      <a href="https://git.generalassemb.ly/stevencharleshuang/jquery-tic-tac-toe-hw"><img class="icon" src="./img/github.png" alt="git"></a>
                     </p>
                   </div>
-                </div>
-                <div class="web-project" id="tictactoe">
-                    <h3>Tic-Tac-Toe</h3>
-                    <a href="https://git.generalassemb.ly/pages/stevencharleshuang/jquery-tic-tac-toe-hw/">
-                      <img src="./img/tictactoe.png" alt="tictactoe">
-                    </a>
-                    <div class="web-project-info">
-                      <p>
-                        This was an assignment that challenged us to implement winning game logic using
-                        jQuery and JavaScript to create a functional 2-player game.
-                        <br /><br />
-                        <span>Tech</span>: <a class="tictactoe-git" href="https://github.com/stevencharleshuang/jquery-tic-tac-toe">HTML, CSS, JavaScript, jQuery</a>
-                      </p>
-                      <p>
-                        <a href="https://github.com/stevencharleshuang/jquery-tic-tac-toe"><img class="icon" src="./img/web.png" alt="git"></a>
-                        <a href="https://git.generalassemb.ly/stevencharleshuang/jquery-tic-tac-toe-hw"><img class="icon" src="./img/github.png" alt="git"></a>
-                      </p>
-                    </div>
-                </div>
+              </div>
             </div>
-            <!-- <div class="music-projects">
-
-            </div> -->
           </div>
-          <!-- <div class="" id="contact">
-            <h3><span>Contact</span></h3>
-            <p>
-              <a href="mailto: steven.charles.huang@gmail.com">steven.charles.huang@gmail.com</a><br />
-            </p>
-          </div> -->
         </div>
+      </section>
+      <section class="contact">
+        <div class="content">
+          <h1>Contact</h1>
         </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer>
-    <div class="footer-banner">
-      <span>check it</span>
-    </div>
-    <ul class="footer-ul">
-      <li><a id="git-link" href="https://github.com/stevencharleshuang/"><img id="git-icon" src="./img/github.png" alt="git"></a></li>
-      <li><a id="linkedin-link" href="https://www.linkedin.com/in/stevencharleshuang/"><img src="./img/linkedin.png" alt="linkedin"></a></li>
-      <li><a id="resume-link" href="./assets/20180605_Resume.pdf"><img src="./img/resume.png" alt="resume"></a></li>
-    </ul>
+
   </footer>
 </body>
 </html>
