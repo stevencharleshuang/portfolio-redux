@@ -5,8 +5,17 @@ $(function() {
   const about = $('.about');
   const projects = $('.projects');
   const contact = $('.contact');
-  const viewportX = $(document.body).width();
-  const viewportY = $(document.body).height();
+  let viewportX = $(document.body).width();
+  let viewportY = $(document.body).height();
+
+  $(window).resize(() => {
+    viewportX = $(document.body).width();
+    viewportY = $(document.body).height();
+    landing.css({ width: viewportX, height: viewportY });
+    about.css({ width: viewportX, height: viewportY });
+    projects.css({ width: viewportX, height: viewportY });
+    contact.css({ width: viewportX, height: viewportY });
+  })
 
 
   console.log(`viewportX: ${viewportX}  viewportY: ${viewportY}`);
