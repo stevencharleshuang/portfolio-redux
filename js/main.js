@@ -50,6 +50,10 @@ $(function() {
     console.log('>>> Client Scrolled');
   });
 
+
+  /**
+   * MyStuff Links
+   */
   $('#git-link').on('mouseenter', () => {
     $('#stuff').text('Git')
   });
