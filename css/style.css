@@ -141,6 +141,7 @@ main .projects .content {
   text-align: center;
   position: relative;
   top: 20%;
+  overflow: scroll;
 }
 
 main .contact .content {
@@ -163,6 +164,7 @@ main .about {
 main .about p {
   margin: 0 auto;
   width: 50%;
+  font-family: 'Domine', serif;
   text-align: left;
 }
 
