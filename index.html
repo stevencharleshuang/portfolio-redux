@@ -24,7 +24,7 @@
         <ul class="level-right">
           <li><a id="git-link" href="https://github.com/stevencharleshuang/"><img id="git-icon" src="./img/github.png" alt="git"></a></li>
           <li><a id="linkedin-link" href="https://www.linkedin.com/in/stevencharleshuang/"><img src="./img/linkedin.png" alt="linkedin"></a></li>
-          <li><a id="resume-link" href="./assets/20180605_Resume.pdf"><img src="./img/resume.png" alt="resume"></a></li>
+          <li><a id="resume-link" href="./assets/20180607 Resume.pdf"><img src="./img/resume.png" alt="resume"></a></li>
         </ul>
       </div>
   </header>
@@ -71,50 +71,22 @@
           <h1>Projects</h1>
           <!-- Start Project Gallery -->
           <div class="project-gallery">
-            <div class="slideshow-container">
-              <div class="mySlides fade">
-                <img src="./img/steve-fighter.png" alt="steve-fighter" style="width:100%">
-
-                <div class="text">Steve Fighter II</div>
-              </div>
-
-              <div class="mySlides fade">
-                <img src="./img/ivebin.png" alt="ivebin" style="width:100%">
-                <div class="text">IveBin</div>
-              </div>
-
-              <div class="mySlides fade">
-                <img src="./img/searchwoo.png" alt="searchwoo" style="width:100%">
-                <div class="text">SearchWoo</div>
-              </div>
-
-              <div class="mySlides fade">
-                <img src="./img/tictactoe.png" alt="searchwoo" style="width:100%">
-                <div class="text">Tic-Tac-Toe</div>
-              </div>
-                <!-- Next and previous buttons -->
-                <!-- <a class="gal-btn prev" data-val="-1">&#10094;</a>
-                <a class="gal-btn next" data-val="1">&#10095;</a> -->
-              </div>
-              <br>
-
-              <!-- The dots/circles -->
+            <!-- The dots/thumbs -->
               <div style="text-align:center">
-                <span class="dot" data-id="1"></span>
-                <span class="dot" data-id="2"></span>
-                <span class="dot" data-id="3"></span>
-                <span class="dot" data-id="4"></span>
+                <img class="dot" data-id="1" src="./img/steve-fighter-thmb.png" alt="steve-fighter-ii">
+                <img class="dot" data-id="2" src="./img/ivebin-thmb.png" alt="ivebin">
+                <img class="dot" data-id="3" src="./img/searchwoo-thmb.png" alt="searchwoo">
+                <img class="dot" data-id="4" src="./img/tictactoe-thmb.png" alt="tictactoe">
               </div>
-          <!-- End Project Gallery -->
-          <!-- Old Stuff -->
-          <!-- <div class="web-projects columns">
-            <div class="column">
-              <div class="web-project" id="stevefighter">
-                <h3>Steve Fighter II</h3>
+            <div class="slideshow-container">
+
+              <!-- Steve Fighter II -->
+              <div class="mySlides fade">
                 <a href="http://eager-blackwell-7636a3.bitballoon.com/">
                   <img src="./img/steve-fighter.png" alt="steve-fighter">
                 </a>
                 <div class="web-project-info">
+                  <h4 class="text">Steve Fighter II</h4>
                   <p>
                     This is a game based on the popular 90s game by capcom.
                     It features a player signup form and hit-detection without HTML5 Canvas
@@ -127,14 +99,14 @@
                   </p>
                 </div>
               </div>
-              <div class="web-project" id="ivebin">
-                <div class="ivebin-img">
-                  <h3>IveBin</h3>
-                  <a href="https://ivebin.herokuapp.com/public">
+
+              <!-- Ivebin -->
+              <div class="mySlides fade">
+                <a href="https://ivebin.herokuapp.com/public">
                     <img src="./img/ivebin.png" alt="ivebin">
-                  </a>
-                </div>
+                </a>
                 <div class="web-project-info">
+                  <h4 class="text">IveBin</h4>
                   <p>
                     This is a full-CRUD app for users to create a profile, log in, then
                     blog about their travel experiences with the ability to
@@ -148,14 +120,14 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="column">
-              <div class="web-project" id="searchwoo">
-                <h3>SearchWoo</h3>
+
+              <!-- SearchWoo -->
+              <div class="mySlides fade">
                 <a href="https://searchwoo.herokuapp.com">
                   <img src="./img/searchwoo.png" alt="searchwoo">
                 </a>
                 <div class="web-project-info">
+                  <h4 class="text">SearchWoo</h4>
                   <p>
                     This is a group-made CRUD app based on the functionality of FourSquare and Yelp
                     where users can log in, choose a business they would like to review,
@@ -169,12 +141,14 @@
                   </p>
                 </div>
               </div>
-              <div class="web-project" id="tictactoe">
-                <h3>Tic-Tac-Toe</h3>
+
+              <!-- Tic-Tac-Toe -->
+              <div class="mySlides fade">
                 <a href="https://git.generalassemb.ly/pages/stevencharleshuang/jquery-tic-tac-toe-hw/">
                   <img src="./img/tictactoe.png" alt="tictactoe">
                 </a>
                 <div class="web-project-info">
+                  <h4 class="text">Tic-Tac-Toe</h4>
                   <p>
                     This was an assignment that challenged us to implement winning game logic using
                     jQuery and JavaScript to create a functional 2-player game.
@@ -187,20 +161,111 @@
                   </p>
                 </div>
               </div>
+
+                <!-- Next and previous buttons -->
+                <!-- <a class="gal-btn prev" data-val="-1">&#10094;</a>
+                <a class="gal-btn next" data-val="1">&#10095;</a> -->
             </div>
-          </div> -->
-          <!--  -->
+              <br>
+
+          <!-- End Project Gallery -->
         </div>
       </section>
       <section class="contact">
         <div class="content">
           <h1>Contact</h1>
+          <!-- contact form begin -->
+          <!-- <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Username</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+            <p class="help is-success">This username is available</p>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+            </div>
+            <p class="help is-danger">This email is invalid</p>
+          </div>
+
+          <div class="field">
+            <label class="label">Subject</label>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>Select dropdown</option>
+                  <option>With options</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox">
+                I agree to the <a href="#">terms and conditions</a>
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="question">
+                Yes
+              </label>
+              <label class="radio">
+                <input type="radio" name="question">
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-text">Cancel</button>
+            </div>
+          </div> -->
+          <!-- contact form end -->
         </div>
       </section>
     </div>
   </main>
-  <footer>
+<!--   <footer>
 
-  </footer>
+  </footer> -->
 </body>
 </html>
