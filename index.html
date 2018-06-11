@@ -71,7 +71,7 @@
           <h1>Projects</h1>
           <!-- Start Project Gallery -->
           <div class="project-gallery">
-            <!-- The dots/circles -->
+            <!-- The dots/thumbs -->
               <div style="text-align:center">
                 <img class="dot" data-id="1" src="./img/steve-fighter-thmb.png" alt="steve-fighter-ii">
                 <img class="dot" data-id="2" src="./img/ivebin-thmb.png" alt="ivebin">
@@ -79,6 +79,7 @@
                 <img class="dot" data-id="4" src="./img/tictactoe-thmb.png" alt="tictactoe">
               </div>
             <div class="slideshow-container">
+
               <!-- Steve Fighter II -->
               <div class="mySlides fade">
                 <a href="http://eager-blackwell-7636a3.bitballoon.com/">
@@ -98,6 +99,7 @@
                   </p>
                 </div>
               </div>
+
               <!-- Ivebin -->
               <div class="mySlides fade">
                 <a href="https://ivebin.herokuapp.com/public">
@@ -118,6 +120,7 @@
                   </p>
                 </div>
               </div>
+
               <!-- SearchWoo -->
               <div class="mySlides fade">
                 <a href="https://searchwoo.herokuapp.com">
@@ -138,41 +141,125 @@
                   </p>
                 </div>
               </div>
+
               <!-- Tic-Tac-Toe -->
               <div class="mySlides fade">
                 <a href="https://git.generalassemb.ly/pages/stevencharleshuang/jquery-tic-tac-toe-hw/">
                   <img src="./img/tictactoe.png" alt="tictactoe">
                 </a>
-                <div class="web-project" id="tictactoe">
+                <div class="web-project-info">
                   <h4 class="text">Tic-Tac-Toe</h4>
-                  <div class="web-project-info">
-                    <p>
-                      This was an assignment that challenged us to implement winning game logic using
-                      jQuery and JavaScript to create a functional 2-player game.
-                      <br /><br />
-                      <span>Tech</span>: <a class="tictactoe-git" href="https://github.com/stevencharleshuang/jquery-tic-tac-toe">HTML, CSS, JavaScript, jQuery</a>
-                    </p>
-                    <p>
-                      <a href="https://github.com/stevencharleshuang/jquery-tic-tac-toe"><img class="icon" src="./img/web.png" alt="git"></a>
-                      <a href="https://git.generalassemb.ly/stevencharleshuang/jquery-tic-tac-toe-hw"><img class="icon" src="./img/github.png" alt="git"></a>
-                    </p>
-                  </div>
+                  <p>
+                    This was an assignment that challenged us to implement winning game logic using
+                    jQuery and JavaScript to create a functional 2-player game.
+                    <br /><br />
+                    <span>Tech</span>: <a class="tictactoe-git" href="https://github.com/stevencharleshuang/jquery-tic-tac-toe">HTML, CSS, JavaScript, jQuery</a>
+                  </p>
+                  <p>
+                    <a href="https://github.com/stevencharleshuang/jquery-tic-tac-toe"><img class="icon" src="./img/web.png" alt="git"></a>
+                    <a href="https://git.generalassemb.ly/stevencharleshuang/jquery-tic-tac-toe-hw"><img class="icon" src="./img/github.png" alt="git"></a>
+                  </p>
+                </div>
               </div>
+
                 <!-- Next and previous buttons -->
                 <!-- <a class="gal-btn prev" data-val="-1">&#10094;</a>
                 <a class="gal-btn next" data-val="1">&#10095;</a> -->
-              </div>
-              <br>
+            </div>
+              <br>   
 
-              
           <!-- End Project Gallery -->
-         
-          <!--  -->
         </div>
       </section>
       <section class="contact">
         <div class="content">
           <h1>Contact</h1>
+          <!-- contact form begin -->
+          <!-- <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Username</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+            <p class="help is-success">This username is available</p>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+            </div>
+            <p class="help is-danger">This email is invalid</p>
+          </div>
+
+          <div class="field">
+            <label class="label">Subject</label>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>Select dropdown</option>
+                  <option>With options</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox">
+                I agree to the <a href="#">terms and conditions</a>
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="question">
+                Yes
+              </label>
+              <label class="radio">
+                <input type="radio" name="question">
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-text">Cancel</button>
+            </div>
+          </div> -->
+          <!-- contact form end -->
         </div>
       </section>
     </div>
