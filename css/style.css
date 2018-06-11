@@ -125,6 +125,7 @@ main .landing {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: scroll;
   /*z-index: 40;*/
 }
 
@@ -160,6 +161,7 @@ main .about {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: scroll;
   /*visibility: hidden;*/
   /*z-index: 30;*/
 }
@@ -178,6 +180,7 @@ main .projects {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: scroll;
   /*visibility: hidden;*/
   /*z-index: 20;*/
 }
@@ -189,6 +192,7 @@ main .contact {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: scroll;
   /*visibility: hidden;*/
   /*z-index: 10;*/
 }
@@ -297,6 +301,17 @@ main .contact {
 .web-project .icon {
   width: 25px;
   height: auto;
+}
+
+.contact-form {
+  margin: 0 auto;
+  width: 30%;
+  /*text-align: center;*/
+}
+
+.field {
+  /*text-align: center;*/
+  /*width: 50%;*/
 }
 
 span {
