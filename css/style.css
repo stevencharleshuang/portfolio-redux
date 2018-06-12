@@ -11,6 +11,7 @@ html {
   height: 100%;
   background-color: #222;
   z-index: -50;
+  overflow: hidden;
 }
 
 body {
@@ -125,7 +126,7 @@ main .landing {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: scroll;
+  /*overflow: scroll;*/
   /*z-index: 40;*/
 }
 
@@ -161,7 +162,7 @@ main .about {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: scroll;
+  /*overflow: scroll;*/
   /*visibility: hidden;*/
   /*z-index: 30;*/
 }
@@ -180,7 +181,7 @@ main .projects {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: scroll;
+  overflow: hidden;
   /*visibility: hidden;*/
   /*z-index: 20;*/
 }
@@ -192,7 +193,7 @@ main .contact {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: scroll;
+  /*overflow: scroll;*/
   /*visibility: hidden;*/
   /*z-index: 10;*/
 }
@@ -305,13 +306,18 @@ main .contact {
 
 .contact-form {
   margin: 0 auto;
-  width: 30%;
+  width: 50%;
   /*text-align: center;*/
 }
 
+.label {
+  text-align: left;
+}
+
 .field {
+  margin-bottom: 15px;
   /*text-align: center;*/
-  /*width: 50%;*/
+  width: 50%;
 }
 
 span {
