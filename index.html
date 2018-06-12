@@ -12,37 +12,36 @@
   <script src="js/main.js"></script>
 </head>
 <body>
-  <header class="columns is-desktop">
-    <div class="column is-two-thirds">
-      <span id="name">Steven Charles Huang</span>
-      <span id="title">[ Web Developer ]</span>
+  <header class="is-mobile is-four-fifths columns">
+    <div class="name-title ">
+      <span id="name" class="is-size-3">Steven Charles Huang</span>
+      <span id="title" class="is-size-5">[ Web Developer ]</span>
     </div>
-      <div class="column my-stuff columns">
-        <div class="column is-one-third"></div>
-        <div class="stuff-box column is-one-third">
-          My <span id="stuff">Stuff</span>
-        </div>
-        <ul class="column is-one-third">
-          <li><a id="git-link" href="https://github.com/stevencharleshuang/"><img id="git-icon" src="./img/github.png" alt="git"></a></li>
-          <li><a id="linkedin-link" href="https://www.linkedin.com/in/stevencharleshuang/"><img src="./img/linkedin.png" alt="linkedin"></a></li>
-          <li><a id="resume-link" href="./assets/20180607 Resume.pdf"><img src="./img/resume.png" alt="resume"></a></li>
-        </ul>
+    <div class="my-stuff is-one-fifth is-size-5">
+      <div class="stuff-box">
+        My <span id="stuff">Stuff</span>
       </div>
-  </header>
-  <main class="">
-    <div class="nav-btns">
-      <ul>
-        <li id="landing-btn">§</li>
-        <li id="about-btn">About</li>
-        <li id="projects-btn">Projects</li>
-        <li id="contact-btn">Contact</li>
+      <ul class="header-links">
+        <li><a id="git-link" href="https://github.com/stevencharleshuang/"><img id="git-icon" src="./img/github.png" alt="git"></a></li>
+        <li><a id="linkedin-link" href="https://www.linkedin.com/in/stevencharleshuang/"><img src="./img/linkedin.png" alt="linkedin"></a></li>
+        <li><a id="resume-link" href="./assets/20180607 Resume.pdf"><img src="./img/resume.png" alt="resume"></a></li>
       </ul>
     </div>
+  </header>
+  <nav class="nav-btns is-size-3">
+    <ul>
+      <li id="landing-btn">§</li>
+      <li id="about-btn">About</li>
+      <li id="projects-btn">Projects</li>
+      <li id="contact-btn">Contact</li>
+    </ul>
+  </nav>
+  <main class="">
     <div class="">
       <!-- Landing Page -->
       <section class="landing">
-        <div class="content columns">
-          <div class="splash column">
+        <div class="content ">
+          <div class="splash ">
             <img src="./img/splash-02.png" alt="splash">
             <div class="thoughts">
               <!-- https://codepen.io/cooljockey/pen/uyeHz -->
@@ -52,7 +51,7 @@
               <div class='d'>Skating</div>
             </div>
           </div>
-          <div class="motto column">
+          <div class="motto ">
             <h1>
               Full-stack web developer with a passion for making game applications in unconventional ways
             </h1>
