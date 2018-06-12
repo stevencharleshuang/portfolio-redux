@@ -73,51 +73,5 @@ $(function() {
   });
 
 
-  /**
-   * w3 slideshow sample - Modded
-   * src: https://www.w3schools.com/howto/howto_js_slideshow.asp
-   */
-  let slideIndex = 1;
-  showSlides(slideIndex);
-
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    let i;
-    let slides = $('.mySlides');
-    let dots = $('.dot');
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        $(slides[i]).css({ 'display': 'none' });
-    }
-    for (i = 0; i < dots.length; i += 1) {
-      $(dots[i]).toggleClass( "active" );
-    }
-    $(slides[slideIndex-1]).css({ 'display': 'block' });
-    $(dots[slideIndex-1]).toggleClass( "active" );
-  }
-  /* My Mods */
-  // E-Handlers
-  // Dots
-  $('.dot').on('click', (e) => {
-    currentSlide(e.target.dataset.id);
-    // console.log('e =', e.target.dataset.id);
-  })
-
-  //
-  $('.gal-btn').on('click', (e) => {
-  //   // console.log('e =', e.target.dataset.val);
-    plusSlides(e.target.dataset.val);
-  })
-
 // Closes off jQuery Load-Check
 });
