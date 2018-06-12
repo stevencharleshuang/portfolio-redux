@@ -78,7 +78,7 @@ header #title {
 }
 
 header .stuff-box {
-  margin: 10%;
+/*  margin: 10%;*/
   width: 100px;
 }
 
@@ -356,8 +356,6 @@ footer li:hover {
   animation: spread .5s ease-out forwards;
 }
 
-
-
 span.indent{
   font-family: 'Domine', serif;
   font-weight: 500;
@@ -378,4 +376,29 @@ span.indent{
 @keyframes info {
   from {visibility: hidden;}
   to {visibility: visible;}
+}
+
+@media only screen and (max-width: 770px) {
+    body {
+      
+    }
+    header .my-stuff {
+      position: absolute;
+      right: 0;
+      border: 1px solid red;
+      max-width: 30%;
+      display: flex;
+      flex-direction: column
+      /*max-height: 25px;*/
+    }
+
+    header .my-stuff img {
+      margin: 3px;
+      align-self: auto;
+    }
+
+    section {
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
 }
