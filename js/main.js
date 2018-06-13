@@ -87,39 +87,32 @@ $(function() {
     $('#stuff').text('Stuff')
   });
 
-  // https://codepen.io/cooljockey/pen/uyeHz
+  // Moving Divs Source: https://codepen.io/cooljockey/pen/uyeHz 
+  // Refactored
   animateDiv('.a');
   animateDiv('.b');
   animateDiv('.c');
   animateDiv('.d');
-
-  const gBCR = $('.splash')[0].getBoundingClientRect();
-  console.log('gBCR:', gBCR);
+  // console.log('gBCR:', gBCR);
 
   function makeNewPosition(){
-      
-      // Get viewport dimensions (remove the dimension of the div)
-      // var h = $('.splash').height() - 100;
-      // var w = $('.splash').width() - 100;
-      
-      var h = $('.splash')[0].getBoundingClientRect().top - 10;
-      var w = $('.splash')[0].getBoundingClientRect().left - 10;
-
-      // let gBCR = 
-
-      var nh = Math.floor(Math.random() * h);
-      var nw = Math.floor(Math.random() * w);
-      
-      return [nh,nw];    
-      
+    const gBCR = $('.splash')[0].getBoundingClientRect();     
+    const minHeight = gBCR.top;
+    const minWidth = gBCR.left - 100;
+    const maxHeight = gBCR.bottom - 100;
+    const maxWidth = gBCR.right - 100;
+    let newHeight = Math.floor(Math.random() * (maxHeight - minHeight) + minHeight);
+    let newWidth = Math.floor(Math.random() * (maxWidth - minWidth) + minWidth);
+    // console.log('new height: ', newHeight);
+    // console.log('new width: ', newWidth);
+    return [newHeight,newWidth];    
   }
 
   function animateDiv(myclass){
-      var newq = makeNewPosition();
-      $(myclass).animate({ top: newq[0], left: newq[1] }, 2000,   function(){
+      let newVal = makeNewPosition();
+      $(myclass).animate({ top: newVal[0], right: newVal[1] }, 2000,   function(){
         animateDiv(myclass);        
       });
-      
   };
 
 // Closes off jQuery Load-Check
