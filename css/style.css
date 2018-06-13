@@ -57,8 +57,17 @@ header #title {
   text-align: right;
 }
 
+
+header .my-stuff {
+  width: 30%;
+}
+
+header .my-stuff .stuff-box {
+  text-align: right;
+}
+
 header img {
-  width: 25px;
+  width: 40px;
   height: auto;
 }
 
@@ -67,9 +76,10 @@ header ul {
 }
 
 header li {
+  display: inline-block;
   text-decoration: none;
   /*display: inline-block;*/
-  animation: squeeze .5s ease-out reverse;
+  animation: squeeze 1s ease-out reverse;
 }
 
 header #title {
@@ -79,7 +89,6 @@ header #title {
 
 header .stuff-box {
 /*  margin: 10%;*/
-  width: 100px;
 }
 
 .nav-btns {
@@ -143,9 +152,15 @@ main .landing .content {
   top: 10%;
 }
 
-main .landing img {
+main .landing .splash {
   top: 30%;
-  width: 50%;
+  margin: 0 auto;
+  width: 55%;
+  height: auto;
+}
+
+main .landing img {
+  width: 100%;
   height: auto;
 }
 
@@ -348,7 +363,7 @@ span.indent{
 }
 
 @keyframes squeeze {
-  100% {padding: 0 10%;}
+  100% {padding: 0 30%;}
   0%   {padding: 0 5%;}
 }
 

@@ -93,12 +93,20 @@ $(function() {
   animateDiv('.c');
   animateDiv('.d');
 
+  const gBCR = $('.splash')[0].getBoundingClientRect();
+  console.log('gBCR:', gBCR);
+
   function makeNewPosition(){
       
       // Get viewport dimensions (remove the dimension of the div)
-      var h = $(window).height() - 200;
-      var w = $(window).width() - 200;
+      // var h = $('.splash').height() - 100;
+      // var w = $('.splash').width() - 100;
       
+      var h = $('.splash')[0].getBoundingClientRect().top - 10;
+      var w = $('.splash')[0].getBoundingClientRect().left - 10;
+
+      // let gBCR = 
+
       var nh = Math.floor(Math.random() * h);
       var nw = Math.floor(Math.random() * w);
       
