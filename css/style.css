@@ -111,7 +111,9 @@ header .stuff-box {
   100% { padding-left: 15%;  }
 }
 
-
+.block:not(:last-child) {
+  margin-bottom: 0;
+}
 
 .columns:not(:last-child) {
   margin: 0;
@@ -167,7 +169,7 @@ main .landing img {
 main .landing .motto {
   text-align: left;
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
 }
 
 .thoughts {
@@ -182,26 +184,26 @@ div.a {
 /*width: 50px;
 height:50px;
  background-color:red;*/
-position:fixed;  
+position:fixed;
 }
 
 div.b {
 /*width: 50px;
 height:50px;
  background-color:blue;*/
-position:fixed;  
+position:fixed;
 }
 div.c {
 /*width: 50px;
 height:50px;
  background-color:green;*/
-position:fixed; 
+position:fixed;
 }
 div.d {
 /*width: 50px;
 height:50px;
  background-color:yellow;*/
-position:fixed;  
+position:fixed;
 }
 
 main .about .content {
@@ -405,7 +407,7 @@ span.indent{
     }
 
     header .my-stuff ul {
-      
+
     }
 
     header .my-stuff li {
@@ -431,4 +433,4 @@ span.indent{
       overflow-x: hidden;
       /*overflow-y: scroll;*/
     }
-} 
+}
