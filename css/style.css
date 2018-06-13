@@ -150,7 +150,8 @@ main .landing .content {
   /*text-align: center;*/
   margin: 0 auto;
   position: relative;
-  top: 10%;
+  top: 15%;
+  max-width: 80%;
 }
 
 main .landing .splash {
@@ -166,9 +167,9 @@ main .landing img {
 }
 
 main .landing .motto {
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
-  width: 100%;
+  width: 70%;
 }
 
 .thoughts {
@@ -208,19 +209,19 @@ position:fixed;
 main .about .content {
   text-align: center;
   position: relative;
-  top: 10%;
+  top: 15%;
 }
 
 main .projects .content {
   text-align: center;
   position: relative;
-  top: 10%;
+  top: 15%;
 }
 
 main .contact .content {
   text-align: center;
   position: relative;
-  top: 10%;
+  top: 15%;
 }
 
 main .about {
@@ -265,13 +266,21 @@ main .contact {
   color: white;
 }
 
+.projects-nav ul {
+  list-style: none;
+}
+
+.projects-nav li {
+  display: inline-block;
+}
+
 .project-gallery {
   width: 80%;
   min-height: 500px;
   height: auto;
   text-align: center;
   margin: 0 auto;
-  padding: 5%;
+  padding: 0 5%;
   /*background-color: rgba(20,20,20,.8);*/
   border-radius: 1%;
 }
