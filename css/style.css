@@ -126,7 +126,6 @@ header .stuff-box {
     margin: 0 0 2% 0;
 }
 
-
 main {
   font-family: 'Tauri', sans-serif;
   margin: 0;
@@ -134,7 +133,6 @@ main {
   width: 100%;
   height: 100%;
 }
-
 
 main .landing {
   text-align: center;
@@ -163,7 +161,9 @@ main .landing .splash {
 
 main .landing img {
   width: 100%;
+  border-radius: 50%;
   height: auto;
+  /*border: 3px solid white;*/
 }
 
 main .landing .motto {
@@ -176,7 +176,6 @@ main .landing .motto {
   color: #eee;
   z-index: -1;
 }
-
 
 /* Random Moving Divs Begin */
 /* Sourhce: https://codepen.io/cooljockey/pen/uyeHz */
