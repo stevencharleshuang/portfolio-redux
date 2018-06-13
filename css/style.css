@@ -83,6 +83,8 @@ header .stuff-box {
 }
 
 .nav-btns {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 600;
   font-size: 1.2em;
   position: fixed;
   top: 3em;
@@ -132,19 +134,25 @@ main .landing {
   height: 100%;
   margin: 0;
   padding: 0;
-  /*overflow: scroll;*/
-  /*z-index: 40;*/
 }
 
 main .landing .content {
-  text-align: center;
+  /*text-align: center;*/
+  margin: 0 auto;
   position: relative;
   top: 10%;
 }
 
 main .landing img {
-  width: 100%;
+  top: 30%;
+  width: 50%;
   height: auto;
+}
+
+main .landing .motto {
+  text-align: left;
+  margin: 0 auto;
+  width: 50%;
 }
 
 .thoughts {
@@ -152,35 +160,33 @@ main .landing img {
   z-index: -1;
 }
 
-/*https://codepen.io/cooljockey/pen/uyeHz*/
+
+/* Random Moving Divs Begin */
+/* Sourhce: https://codepen.io/cooljockey/pen/uyeHz */
 div.a {
 /*width: 50px;
 height:50px;
  background-color:red;*/
-position:fixed;
-    
+position:fixed;  
 }
 
 div.b {
 /*width: 50px;
 height:50px;
  background-color:blue;*/
-position:fixed;
-    
+position:fixed;  
 }
 div.c {
 /*width: 50px;
 height:50px;
  background-color:green;*/
-position:fixed;
-    
+position:fixed; 
 }
 div.d {
 /*width: 50px;
 height:50px;
  background-color:yellow;*/
-position:fixed;
-    
+position:fixed;  
 }
 
 main .about .content {
@@ -193,7 +199,6 @@ main .projects .content {
   text-align: center;
   position: relative;
   top: 10%;
-  /*overflow: scroll;*/
 }
 
 main .contact .content {
@@ -209,9 +214,6 @@ main .about {
   height: 100%;
   margin: 0;
   padding: 0;
-  /*overflow: scroll;*/
-  /*visibility: hidden;*/
-  /*z-index: 30;*/
 }
 
 main .about p {
@@ -230,8 +232,6 @@ main .projects {
   padding: 0;
   overflow-x: hidden;
   overflow-y: scroll;
-  /*visibility: hidden;*/
-  /*z-index: 20;*/
 }
 
 main .contact {
@@ -241,9 +241,6 @@ main .contact {
   height: 100%;
   margin: 0;
   padding: 0;
-  /*overflow: scroll;*/
-  /*visibility: hidden;*/
-  /*z-index: 10;*/
 }
 
 .content {
@@ -271,26 +268,6 @@ main .contact {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* w3 styles */
 
 .git-icon {
   width: 20px;
@@ -426,6 +403,12 @@ span.indent{
     }
 
     .nav-btns {
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 1.2em;
+      position: fixed;
+      color: #0070e2;
+      z-index: 50;
       top: 6em;
     }
 
@@ -433,4 +416,4 @@ span.indent{
       overflow-x: hidden;
       /*overflow-y: scroll;*/
     }
-}
+} 
