@@ -2,7 +2,7 @@
  * Landing: #87B6E4;
  * About: #F15338;
  * Projects: #1F2C54;
- * Contact: #D3666A;
+ * Contact: #f7c42c;
  * Misc: #F2F4EC;
  */
 
@@ -253,7 +253,7 @@ main .projects {
 
 main .contact {
   position: absolute;
-  background-color: #D3666A;
+  background-color: #f7c42c;
   width: 100%;
   height: 100%;
   margin: 0;
