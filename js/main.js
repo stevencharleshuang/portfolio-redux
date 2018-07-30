@@ -39,6 +39,7 @@ $(function() {
   projects.css({ width: viewportX, height: viewportY, bottom: viewportY });
   contact.css({ width: viewportX, height: viewportY, bottom: viewportY });
 
+  // Sliding Divs Helper Func
   function showThisHideThat(show, hide1, hide2, hide3) {
       // show.css({ bottom: 0, visibility: 'visible' });
       show.animate({ bottom: 0 }, 1000)
@@ -47,6 +48,7 @@ $(function() {
       hide3.animate({ bottom: viewportY }, 1000);
   }
 
+  // Sliding Divs Click Events
   $('#landing-btn').on('click', () => {
     showThisHideThat(landing, about, projects, contact);
   });
@@ -60,9 +62,9 @@ $(function() {
     showThisHideThat(contact, landing, about, projects);
   });
 
-  $(window).scroll(() => {
-    console.log('>>> Client Scrolled');
-  });
+  // $(window).scroll(() => {
+  //   console.log('>>> Client Scrolled');
+  // });
 
 
   /**
