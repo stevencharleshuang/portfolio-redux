@@ -257,9 +257,9 @@ main .projects {
 }
 
 main .contact {
-  background-image: url('../img/cloud-outline.png');
+/*  background-image: url('../img/cloud-outline.png');
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: 120%;*/
   position: absolute;
   background-color: #f7c42c;
   width: 100%;

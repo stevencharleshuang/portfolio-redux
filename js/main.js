@@ -1,20 +1,20 @@
 $(function() {
   /*
-                               __        __                      __        __          __  __  __ 
+                               __        __                      __        __          __  __  __
                             /  |      /  |                    /  |      /  |        /  |/  |/  |
     ______   __    __   ____$$ |      $$ |  ______    ______  $$ |   __ $$/_______  $$ |$$ |$$ |
    /      \ /  |  /  | /    $$ |      $$ | /      \  /      \ $$ |  /  |$//       \ $$ |$$ |$$ |
   /$$$$$$  |$$ |  $$ |/$$$$$$$ |      $$ |/$$$$$$  |/$$$$$$  |$$ |_/$$/   $$$$$$$  |$$ |$$ |$$ |
-  $$ |  $$ |$$ |  $$ |$$ |  $$ |      $$ |$$ |  $$ |$$ |  $$ |$$   $$<    $$ |  $$ |$$/ $$/ $$/ 
-  $$ \__$$ |$$ \__$$ |$$ \__$$ |      $$ |$$ \__$$ |$$ \__$$ |$$$$$$  \   $$ |  $$ | __  __  __ 
+  $$ |  $$ |$$ |  $$ |$$ |  $$ |      $$ |$$ |  $$ |$$ |  $$ |$$   $$<    $$ |  $$ |$$/ $$/ $$/
+  $$ \__$$ |$$ \__$$ |$$ \__$$ |      $$ |$$ \__$$ |$$ \__$$ |$$$$$$  \   $$ |  $$ | __  __  __
   $$    $$ |$$    $$/ $$    $$ |      $$ |$$    $$/ $$    $$/ $$ | $$  |  $$ |  $$ |/  |/  |/  |
-   $$$$$$$ | $$$$$$/   $$$$$$$/       $$/  $$$$$$/   $$$$$$/  $$/   $$/   $$/   $$/ $$/ $$/ $$/ 
-  /  \__$$ |                                                                                    
-  $$    $$/                                                                                     
-   $$$$$$/       
+   $$$$$$$ | $$$$$$/   $$$$$$$/       $$/  $$$$$$/   $$$$$$/  $$/   $$/   $$/   $$/ $$/ $$/ $$/
+  /  \__$$ |
+  $$    $$/
+   $$$$$$/
 
   */
-  console.log( "jQuery ready and happy!" );
+  // console.log( "jQuery ready and happy!" );
 
   const landing = $('.landing');
   const about = $('.about');
@@ -32,7 +32,7 @@ $(function() {
     contact.css({ width: viewportX, height: viewportY });
   });
 
-  console.log(`viewportX: ${viewportX}  viewportY: ${viewportY}`);
+  // console.log(`viewportX: ${viewportX}  viewportY: ${viewportY}`);
 
   landing.css({ width: viewportX, height: viewportY, bottom: 0 });
   about.css({ width: viewportX, height: viewportY, bottom: viewportY });
@@ -87,7 +87,7 @@ $(function() {
     $('#stuff').text('Stuff')
   });
 
-  // Moving Divs Source: https://codepen.io/cooljockey/pen/uyeHz 
+  // Moving Divs Source: https://codepen.io/cooljockey/pen/uyeHz
   // Refactored
   animateDiv('.a');
   animateDiv('.b');
@@ -96,7 +96,7 @@ $(function() {
   // console.log('gBCR:', gBCR);
 
   function makeNewPosition(){
-    const gBCR = $('.splash')[0].getBoundingClientRect();     
+    const gBCR = $('.splash')[0].getBoundingClientRect();
     const minHeight = gBCR.top;
     const minWidth = gBCR.left - 100;
     const maxHeight = gBCR.bottom - 100;
@@ -105,13 +105,13 @@ $(function() {
     let newWidth = Math.floor(Math.random() * (maxWidth - minWidth) + minWidth);
     // console.log('new height: ', newHeight);
     // console.log('new width: ', newWidth);
-    return [newHeight,newWidth];    
+    return [newHeight,newWidth];
   }
 
   function animateDiv(myclass){
       let newVal = makeNewPosition();
       $(myclass).animate({ top: newVal[0], right: newVal[1] }, 2000,   function(){
-        animateDiv(myclass);        
+        animateDiv(myclass);
       });
   };
 
